@@ -64,7 +64,7 @@ Through this project, I explored:
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/M-Nivetha7/SimTrack-Bot.git
+   git clone https://github.com/M-Nivetha7/IntroBot.git
 Open Webots
 
 Click File → Open World
@@ -72,22 +72,6 @@ Click File → Open World
 Select the .wbt world file from the project folder
 
 Press the Play ▶️ button to run the simulation
-
-📂 Project Structure
-SimTrack-Bot/
-│
-├── worlds/
-│   └── simtrack_world.wbt
-│
-├── controllers/
-│   └── simtrack_controller/
-│       └── simtrack_controller.py
-│
-├── protos/
-│
-└── README.md
-🎥 Demo
-(Simulation demo will be added soon)
 
 🧠 What I Learned
 Understanding Webots Scene Tree hierarchy
