@@ -60,6 +60,15 @@ Through this project, I explored:
 
 ---
 
+<img width="1470" height="956" alt="Screenshot 2026-01-17 at 10 17 43 PM" src="https://github.com/user-attachments/assets/1cdc3a7e-37ba-4a1e-900f-2eef77e39866" />
+
+
+
+
+
+
+
+
 ## 🚀 How to Run the Simulation
 
 1. Clone the repository  
