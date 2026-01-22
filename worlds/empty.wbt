@@ -1,0 +1,200 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 1.5254057552329282e-06 -1.0192429391861983e-06 0.0395870126628232
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.06 0 0
+}
+Robot {
+  translation 0.163828 0.071013 0.133408
+  rotation 0.9351130202419243 0.25056300542381216 -0.25056300542381216 -1.6378353071795866
+  children [
+    DistanceSensor {
+      translation 0.255113 -0.0240607 -0.072106
+      rotation -0.5914578860589023 -0.59145488605948 -0.5480498944212123 -2.1234353071795864
+      children [
+        DEF ds_left Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.02 0.05 0.05
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE ds_left
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.15 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.26 -0.02 -0.00999989
+      rotation -0.5773516025212714 -0.5773496025226483 -0.5773496025226483 -2.094395307179586
+      children [
+        DEF ds_right Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.02 0.05 0.05
+          }
+        }
+      ]
+      name "ds_right"
+      boundingObject USE ds_right
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.2 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.260432 -0.0195009 0.0611016
+      rotation 0.5565660317507016 0.6077570346710205 0.5664500323145591 2.07902
+      children [
+        DEF ds_middle Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.02 0.05 0.05
+          }
+        }
+      ]
+      name "ds_middle"
+      boundingObject USE ds_middle
+      physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.2 1000 0
+      ]
+      type "infra-red"
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.15 0.03 -0.14
+      }
+      device [
+        RotationalMotor {
+          name "wheel4"
+        }
+      ]
+      endPoint Solid {
+        translation 0.2 0.02 0.14
+        rotation 0 0 1 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.04
+              radius 0.09
+            }
+          }
+        ]
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.15 -0.03 -0.14
+      }
+      device [
+        DEF wheel1 RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation -0.190007 0.0199998 -0.14
+        rotation 0 0 1 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.04
+              radius 0.09
+            }
+          }
+        ]
+        name "solid(3)"
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.15 -0.03 0.14
+      }
+      device [
+        DEF wheel2 RotationalMotor {
+          name "wheel2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.17 0.02 0.14
+        rotation 0 0 1 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.04
+              radius 0.09
+            }
+          }
+        ]
+        name "solid(1)"
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.14 -0.03 0.14
+      }
+      device [
+        RotationalMotor {
+          name "wheel3"
+        }
+      ]
+      endPoint Solid {
+        translation 0.21 0.0200002 -0.14
+        rotation 0 0 1 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.04
+              radius 0.09
+            }
+          }
+        ]
+        name "solid(2)"
+      }
+    }
+    DEF BODY_Shape Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.5 0.14 0.24
+      }
+    }
+  ]
+  boundingObject USE BODY_Shape
+  physics Physics {
+  }
+}
