@@ -73,8 +73,8 @@ Select the .wbt world file from the project folder
 
 Press the Play ▶️ button to run the simulation
 
-👩‍💻 Author
+# 👩‍💻 Author
 M. Nivetha
 
-AI & ML Undergraduate | Robotics Beginner | Webots Explorer 🤖
+AI & ML Undergraduate | Webots Explorer 🤖
 
