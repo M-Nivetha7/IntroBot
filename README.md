@@ -73,35 +73,6 @@ Select the .wbt world file from the project folder
 
 Press the Play ▶️ button to run the simulation
 
-🧠 What I Learned
-Understanding Webots Scene Tree hierarchy
-
-Difference between Solid, Shape, and geometry
-
-How robot environments are constructed
-
-Importance of lighting and viewpoint in simulation
-
-Basics of robotics simulation workflow
-
-🌱 Future Improvements
-Add robot movement using motor controllers
-
-Implement color based object tracking
-
-Add camera sensor to the robot
-
-Improve environment realism
-
-Convert simulation into a mini project report
-
-🙌 Acknowledgements
-Webots Official Documentation
-
-Robotics simulation tutorials
-
-Open source robotics community
-
 👩‍💻 Author
 M. Nivetha
 
