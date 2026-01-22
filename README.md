@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=4CAF50&center=true&vCenter=true&width=700&lines=SimTrack+Bot" alt="IntroTrack Bot animated title" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&pause=1000&color=4CAF50&center=true&vCenter=true&width=700&lines=IntroBot" alt="IntroBot animated title" />
   </a>
 </p>
 
